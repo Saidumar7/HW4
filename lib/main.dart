@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
-import 'first_screen.dart';
+import 'main_screen.dart';
+import 'users_list.dart';
+import 'local_users.dart';
 
-void main(){
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-
   @override
-  Widget build(BuildContext context){
-    return const MaterialApp(
-      home: FirstScreen(),
-      debugShowCheckedModeBanner: false,
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'HW4',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => WelcomeScreen(),
+        '/users': (context) => UsersScreen(),
+        '/localusers': (context) => LocalUsersScreen(),
+      },
     );
   }
 }

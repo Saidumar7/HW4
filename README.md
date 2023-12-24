@@ -1,9 +1,21 @@
-# Lab 7
+# hw_4
 
-### You may use the project provided in this repo, or you may use an empty project.
+A new Flutter project created with FlutLab - https://flutlab.io
 
-## Tasks
-### 1. Design a ListView in which you have image of a user, First and Last Names as Title, email as subtitle of Listtile;
-### 2. Create a Model that handles JSON data as shown in your Lab presentation file.
-### 3. Make sure the Model you have created is connected to your project and you are using this to handle JSON from: https://randomuser.me/documentation 
-### 4. You are not required to create a Model which contains all the items in the JSON, it is sufficient to handle several only such as gender, name, picture and email.
+## Screens
+
+# Welcome Screen:
+
+Displays a tutorial on the first launch (using SharedPreferences).
+Tutorial is shown only on the first launch.
+
+# User List Screen:
+
+Fetches user information from the Random User Generator API.
+Displays user information in a list.
+Provides buttons to fetch more users from the API and store selected data into a local SQLite database.
+
+# Local User List Screen:
+
+Reads user information from the local SQLite database.
+Displays user information in a list.
